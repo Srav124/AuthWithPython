@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KVP Login</title>
-    <link rel="stylesheet" href="login.css">
+    <title>KVP Registration</title>
+    <link rel="stylesheet" href="./registration.css">
 </head>
 <body>
     <div class="container">
-        <div class="login-box">
-            <h2>Welcome To KVP</h2>
-            <form id="loginForm">
+        <div class="registration-box">
+            <h2>Create Your Account</h2>
+            <form id="registrationForm">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="Enter your full name" required>
+
                 <label for="email">E-mail</label>
                 <input type="email" id="email" placeholder="Enter your email" required>
 
@@ -18,17 +21,16 @@
                 <input type="password" id="password" placeholder="6+ strong characters" required>
 
                 <label for="confirmPassword">Repeat password</label>
-                <input type="password" id="confirmPassword" placeholder="6+ strong characters" required>
+                <input type="password" id="confirmPassword" placeholder="Repeat your password" required>
 
                 <div class="options">
                     <div>
-                        <input type="checkbox" id="rememberMe">
-                        <label for="rememberMe">Remember for 30 days</label>
+                        <input type="checkbox" id="terms">
+                        <label for="terms">I agree to the Terms & Conditions</label>
                     </div>
-                    <a href="#" class="forgot-password">Forgot password?</a>
                 </div>
 
-                <button type="submit">Login</button>
+                <button type="submit">Create an account</button>
 
                 <div class="signup">
                     <p>Sign Up with</p>
@@ -39,17 +41,9 @@
                     </div>
                 </div>
             </form>
-            <p>Don’t have an account? <a href="./registration.html" style="color: white;">Sign Up</a></p>
-        </div>
-
-        <div class="preview-box">
-            <h2>Designed for individuals</h2>
-            <p>See the analytics and grow your data for tasks remotely, from anywhere!</p>
-            <div class="image-box">
-                <img src="./desig.png" alt="Design Preview">
-            </div>
+            <p>Already have an account? <a href="#">Login</a></p>
         </div>
     </div>
-    <script src="./login.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
